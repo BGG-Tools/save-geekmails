@@ -6,6 +6,11 @@ If a message has already been downloaded before (and the text file already exist
 
 The text files use their message ID as file name, so you can easily search within those text files and then load the rendered version on BGG. For example, to view 12345.txt on BGG, open it at http://boardgamegeek.com/geekmail/message/12345
 
+Configuration
+=============
+
+Edit the line where the session.post() call is being made to match your login and password. You could use a cookie, too.
+
 Usage
 =====
 
