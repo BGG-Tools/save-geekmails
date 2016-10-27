@@ -4,7 +4,7 @@ Download Geekmails from BGG/RPGG/VGG
 This script will download your geekmails and save them as text files in the same directory.
 If a message has already been downloaded before (and the text file already exists), it will be skipped during this process.
 
-The text files use their message ID as file name, so you can easily search within those text files and then load the rendered version on BGG. For example, to view 12345.txt on BGG, open it at http://boardgamegeek.com/geekmail/message/12345
+The text files use their message ID as file name, so you can easily search within those text files and then load the rendered version on BGG. For example, to view 12345.txt on BGG, open it at https://boardgamegeek.com/geekmail/message/12345
 
 Configuration
 =============
