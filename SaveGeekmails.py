@@ -42,7 +42,10 @@ else:
 ############################################### Download ##
 
 import requests
-requests.packages.urllib3.disable_warnings()	# ignore the annoying InsecurePlatformWarnings
+try:
+	requests.packages.urllib3.disable_warnings()	# ignore the annoying InsecurePlatformWarnings
+except:
+	pass
 
 ################################################## Parse ##
 
@@ -88,8 +91,8 @@ def get_geekmails(page, folder):
 		text = r.json()['output']
 		text = unescape(text[text.find('------------ Forwarded Message -----------')+42:text.find('</textarea>')])
 
-		with io.open(num+'.txt', 'w', encoding='UTF-8') as f:
-			f.write(unicode(text.strip()))
+		with io.open(num+'.txt', 'wt', encoding='UTF-8') as f:
+			f.write(text.strip())
 
 #################################### Handle command line ##
 
